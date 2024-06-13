@@ -139,7 +139,8 @@ const App = () => {
     if (window.confirm("Are you sure you want to create this polygon?")) {
       try {
         const response = await axios.post(
-          `http://localhost:3000/api/v1/polygon`,
+          // `http://localhost:3000/api/v1/polygon`,
+          `https://map-backend-u8gr.onrender.com/api/v1/polygon`,
           {
             name,
             coordinates: loadedCoordinates,
