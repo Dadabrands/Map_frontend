@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import toast from "react-hot-toast";
+import toast from "react-toastify";
 
 const EditableMap = ({ coordinates, clearCoordinates, handleSetCord }) => {
   const map = useMap();
